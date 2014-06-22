@@ -1,0 +1,6 @@
+class ProjectsController < ApplicationController
+  # Rendering Views: An empty action is in fact not so empty. Remember "erb :about" in Sinatra? Rails does that for you behind the scenes. Meaning, Each and every controller action will implicitly render a view unless you tell it otherwise. By default Rails renders views as follows: views/<CONTROLLER_NAME>/<ACTION_NAME>.html.erb. You shouldn't change that behavior unless you're doing ajax work or have a really good reason. Remember: convention over configuration. Please read this: http://guides.rubyonrails.org/v3.2.13/layouts_and_rendering.html.
+  # Rendering Layouts: By default, Rails will look under views/layouts/<CONTROLLER_NAME>.html.erb, if it doesn't find it, it will fall back on the parent's layout (remember, every controller inherits from application controller). Therefore, the general use case, an application will have one layout, that is the views/layouts/application.html.erb unless you decide to change it for a specific controller or action. When would you want a different layout? What if you have an Admin dashboard in your app and you don't want it to look the same as your user-facing app. Read this: http://guides.rubyonrails.org/v3.2.13/layouts_and_rendering.html
+  def index
+  end
+end

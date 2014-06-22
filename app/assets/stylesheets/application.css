@@ -1,0 +1,382 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+ body{
+ 	background-image:url('bg.jpg');
+ 	color: black;
+ 	font-family: cursive;
+ /* font-weight: 400;*/ 
+  color: black;
+  text-decoration: none;
+ /* text-align: center;*/
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ 	/*text-shadow: 2px 1px black;	*/
+
+ }
+
+.transbox{
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.transbox img{
+width: 90%;
+height: 50%;
+}
+
+#giffbub, #giffmerge, #giffquick {
+  height: 150px;
+  width: 350px;
+}
+
+#giffselect{
+height: 300px;
+width: 150px;
+}
+
+.main-navigation{
+display: inline-block;
+width: 55%;
+height: 50%;
+border-radius: 25px;
+}
+
+nav li {
+float:left;
+margin-right:50px;
+list-style: none;
+text-decoration: none;
+vertical-align: text-bottom;
+padding: 2%;
+
+}
+
+a{
+	color: black;
+	/*text-shadow: 2px 1px black;*/
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+nav a:hover, a:active {
+color: brown;
+}
+
+
+.article{
+	width: 60%;
+	height: 50%;
+}
+
+
+.sidebar{
+  text-align: right;
+  overflow: scroll;
+  visibility: visible;
+  position: absolute;
+  max-width: 30%;
+  padding: 2%;
+  top: 5%;
+  right:5%;
+  }
+
+.contentinfo{
+	clear: both;
+	text-align: center;
+	height: 5%;
+	padding: 2px;
+	/*background-color: rgba(255, 255, 255, 0.5);*/
+}
+
+.post{
+	text-align: left;
+}
+
+.post_title{
+	text-align: left;
+	color: black;
+	margin-left: 24px;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:700italic);
+
+
+
+#wrap {
+  margin-top: 15px;
+  margin-bottom: 50px;
+  text-align:center;
+}
+
+#container {
+  margin: 0 auto; 
+  width: 80%;
+}
+
+#headh1{
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.post-it {
+/* create a yellow square that's 110 px on each side: */
+  height: 110px;
+  width: 110px;
+  color: black;
+/*  display as a block element that is floated left:*/
+  display: block;
+  float: left;
+/* give it some inside padding so the text won't be too close to the edges and
+center the text make it 16 pixels in size: */
+  padding: 35px;
+  text-align: center;
+  font-size: 16px;
+/* give it some room so other page elements aren't too close (you'll need to 
+experiment with this depending on your rotation and what else is on the page: */ 
+  margin-top: 40px;
+  margin-left: 20px;
+/* give it a drop shadow: */
+  /*box-shadow: 2px 2px 4px rgba(0,0,0,0.4);*/
+/* rotate it for a more realistic look: */
+  -ms-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);
+  -o-transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+}
+
+/*Polaroid Code from http://zurb.com/playground/css3-polaroids*/
+
+@media screen and max-width 767px {
+  .polaroids li:nth-child(n+5) {
+    display: none;
+  }
+
+}
+
+.polaroids, .images, .contact {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact img{
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+}
+
+
+ul.polaroids li {
+  display: inline;
+}
+
+ul.polaroids a {
+  background: #fff;
+  display: inline;
+  float: left;
+  margin: 0 0 27px 30px;
+  width: auto;
+  padding: 10px 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.75);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.75);
+  -webkit-transform: rotate(-2deg);
+  -webkit-transition: 0 .15s linear;
+  -moz-transform: rotate(-2deg);
+}
+
+ul.polaroids li {
+  padding-left: 0;
+}
+
+@media screen and max-width 768px {
+  ul.polaroids li a {
+    margin-left: 0;
+  }
+
+}
+
+ul.polaroids img {
+  display: block;
+  width: 190px;
+  margin-bottom: 12px;
+}
+
+ul.polaroids a:after {
+  content: attr(title);
+}
+
+ul.polaroids li:nth-child(even) a {
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+}
+
+ul.polaroids li:nth-child(3n) a {
+  -webkit-transform: none;
+  position: relative;
+  top: -5px;
+  -moz-transform: none;
+}
+
+ul.polaroids li:nth-child(5n) a {
+  -webkit-transform: rotate(5deg);
+  position: relative;
+  right: 5px;
+  -moz-transform: rotate(5deg);
+}
+
+ul.polaroids li:nth-child(8n) a {
+  position: relative;
+  right: 5px;
+  top: 8px;
+}
+
+ul.polaroids li:nth-child(11n) a {
+  position: relative;
+  left: -5px;
+  top: 3px;
+}
+
+ul.polaroids li.messy a {
+  margin-top: -400px;
+  position: relative;
+  left: 160px;
+}
+
+ul.polaroids li a:hover {
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.75);
+  -moz-box-shadow: 0 3px 6px rgba(0,0,0,.75);
+  position: relative;
+  z-index: 5;
+}
+
+
+
+@media screen and (max-width: 792px){
+  .pencil, .contact img {
+/* make sure it clears any floats above it: */
+    display: block;
+    clear: both;
+/* center text and hide any that doesn't fit: */
+    overflow: hidden;
+    text-align: center;
+/* give some spacing between it and previous elements: */
+    margin-top: 85px;
+/* center it: */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+/* Visable only if being viewed on a screen smaller than the pencil image: */
+  .pencil p {
+    font-family: 'Droid Serif', serif;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: italic;
+    color: rgba(255,255,255,.75);
+  }
+}
+
+/* Make visable only if being viewed on a screen larger than the pencil image: */
+@media screen and (min-width: 793px){
+  .pencil {
+/* set to be same dimensions as pencil image, and set that as background: */
+    width: 793px;
+    height: 70px;
+    background: url('pencil.png') no-repeat;
+    background-size: 100%;
+/* make sure it clears any floats above it: */
+    display: block;
+    clear: both;
+/* center text and hide any that doesn't fit: */
+    overflow: hidden;
+    text-align: center;
+/* give some spacing between it and previous elements: */
+    margin-top: 85px;
+/* center it: */
+    margin-left: auto;
+    margin-right: auto;
+/* rotate it for a more realistic look: */
+    -ms-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+  }
+  
+  .pencil p {
+/* the margin and the padding is set so the text stays in the correct location 
+on the pencil image (for example, so there's not text on the eraser or falling
+off the pencil)  */
+    margin-top: 10px;
+    padding: 23px 75px 17px 120px;
+/* text styling using a Google font */
+    color: black;
+    font-family: 'Droid Serif', serif;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: italic;
+    
+  }
+  
+  .pencil a {
+    color: #303d21;
+  }
+  
+  .pencil a:hover {
+    color: brown;
+  }
+
+}
+
+.images img{
+	display: inline;
+	width: 55px;
+ 	height: 55px;
+ 	border-radius: 15px;
+ 	padding-left: 5px;
+
+}
+
+.images img:hover{
+	width: 55px;
+ 	height: 75px;
+}
+
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+
+.more a{
+  font-size: 12px;
+}
+
+.images a, .more a, .pencil a{
+  background: none;
+}
+
+#sizzle{
+  font-size: inherit;
+}
+

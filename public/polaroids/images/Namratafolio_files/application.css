@@ -1,0 +1,87 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+ body{
+ 	background-image:url('rail.jpg');
+ 	color: black;
+ 	/*text-shadow: 2px 1px black;	*/
+
+ }
+
+.transbox{
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.main-navigation{
+display: inline-block;
+width: 55%;
+height: 50%;
+border-radius: 25px;
+}
+
+nav li {
+float:left;
+margin-right:50px;
+list-style: none;
+text-decoration: none;
+vertical-align: text-bottom;
+padding: 2%;
+
+}
+
+a{
+	color: black;
+	/*text-shadow: 2px 1px black;*/
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+nav a:hover, a:active {
+color: pink;
+}
+
+
+.article{
+	width: 60%;
+	height: 50%;
+}
+
+
+.sidebar{
+  text-align: right;
+  overflow: scroll;
+  visibility: visible;
+  position: absolute;
+  max-width: 30%;
+  padding: 2%;
+  top: 5%;
+  right:5%;
+  }
+
+.contentinfo{
+	clear: both;
+	text-align: center;
+	height: 5%;
+	padding: 2px;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+.post{
+	text-align: left;
+}
+
+.post_title{
+	text-align: left;
+	color: black;
+	margin-left: 24px;
+}
+
