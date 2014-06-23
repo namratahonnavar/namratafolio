@@ -158,7 +158,7 @@ experiment with this depending on your rotation and what else is on the page: */
 
 /*Polaroid Code from http://zurb.com/playground/css3-polaroids*/
 
-@media screen and max-width 767px {
+@media screen and (max-width: 767px) {
   .polaroids li:nth-child(n+5) {
     display: none;
   }
@@ -204,7 +204,7 @@ ul.polaroids li {
   padding-left: 0;
 }
 
-@media screen and max-width 768px {
+@media screen and (max-width: 768px) {
   ul.polaroids li a {
     margin-left: 0;
   }
