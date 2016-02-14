@@ -11,12 +11,14 @@
  *= require_self
  *= require_tree .
  */
- body{
- 	background-image:url('bg.jpg');
+body{
+ 	background-image:url('rails1.png');
+  /*background-color: #eef2f5;*/
+  /*color: #2b78b7;*/
  	color: black;
- 	font-family: cursive;
- /* font-weight: 400;*/ 
-  color: black;
+ 	font-family: 'Droid Serif', serif;
+  font-weight: 400;
+  /*color: black;*/
   text-decoration: none;
  /* text-align: center;*/
   -moz-background-size: cover;
@@ -24,15 +26,19 @@
   -o-background-size: cover;
   background-size: cover;
  	/*text-shadow: 2px 1px black;	*/
-
  }
 
 .transbox{
-	background-color: rgba(255, 255, 255, 0.5);
+	background-color: #E2DAD1;  
 }
+
+#transbox{
+  background-color: #E2DAD1;  
+}
+
 .transbox img{
-width: 90%;
-height: 50%;
+  width: 90%;
+  height: 50%;
 }
 
 #giffbub, #giffmerge, #giffquick {
@@ -41,41 +47,40 @@ height: 50%;
 }
 
 #giffselect{
-height: 300px;
-width: 150px;
+  height: 300px;
+  width: 150px;
 }
 
 .main-navigation{
-display: inline-block;
-width: 55%;
-height: 50%;
+  display: inline-block;
+  width: 55%;
+  height: 50%;
 border-radius: 25px;
 }
 
 nav li {
-float:left;
-margin-right:50px;
-list-style: none;
-text-decoration: none;
-vertical-align: text-bottom;
-padding: 2%;
+  float:left;
+  margin-right:50px;
+  list-style: none;
+  text-decoration: none;
+  vertical-align: text-bottom;
+  padding: 2%;
 
 }
 
 a{
 	color: black;
-	/*text-shadow: 2px 1px black;*/
-	background-color: rgba(255, 255, 255, 0.5);
 }
 
 nav a:hover, a:active {
-color: brown;
+color: white;
 }
 
 
 .article{
 	width: 60%;
 	height: 50%;
+  background-color: #E2DAD1;
 }
 
 
@@ -108,6 +113,10 @@ color: brown;
 	margin-left: 24px;
 }
 
+.post:hover{
+  color: black;
+}
+
 @import url(http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two);
 @import url(http://fonts.googleapis.com/css?family=Droid+Serif:700italic);
 
@@ -127,6 +136,22 @@ color: brown;
 #headh1{
   color: black;
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+#footer p{
+  text-align: center;
+  float: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #E2DAD1;
+  width: 80%;
+  margin-top: 10px;
+  /*padding: 23px 75px 17px 120px;*/
+  padding: 10px 10px 10px 10px;
+  color: black;
+  font-family: 'Droid Serif', serif;
+  font-size: 16px;
+  font-style: italic;
 }
 
 .post-it {
@@ -166,7 +191,7 @@ experiment with this depending on your rotation and what else is on the page: */
 }
 
 .polaroids, .images, .contact {
-  width: 80%;
+  width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -284,7 +309,6 @@ ul.polaroids li a:hover {
     margin-right: auto;
   }
 
-
 /* Visable only if being viewed on a screen smaller than the pencil image: */
   .pencil p {
     font-family: 'Droid Serif', serif;
@@ -301,7 +325,7 @@ ul.polaroids li a:hover {
 /* set to be same dimensions as pencil image, and set that as background: */
     width: 793px;
     height: 70px;
-    background: url('pencil.png') no-repeat;
+    background: url('log1.png') no-repeat;
     background-size: 100%;
 /* make sure it clears any floats above it: */
     display: block;
@@ -342,7 +366,7 @@ off the pencil)  */
   }
   
   .pencil a:hover {
-    color: brown;
+    color: white;
   }
 
 }
